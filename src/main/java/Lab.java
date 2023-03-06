@@ -13,7 +13,15 @@ public class Lab {
      * Notice that errors are separate from exceptions. Errors are external to Java and can occur when some external
      * event happens, like running out of computer memory.
      */
-    public void throwUncheckedException(){
+    
+    
+     public void throwUncheckedException() {
+        int[] nums = new int[] { 14, 2, 5, 0 };
 
+        int result = intDivide(17, 0);
+        System.out.println(result);
+    }
+    static int intDivide(int n1, int n2) {
+        return (n1 / n2);
     }
 }
